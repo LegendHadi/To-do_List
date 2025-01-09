@@ -6,14 +6,6 @@ function addTask() {
     alert("You must write something!");
   } else {
     listContainer.innerHTML += `<li>${inputBox.value} <span>\u00d7</span></li>`;
-
-    // another way
-    // let li= document.createElement('li');
-    // li.innerHTML= inputBox.value;
-    // listContainer.appendChild(li);
-    // let span= document.createElement('span');
-    // span.innerHTML= '\u00d7';
-    // li.appendChild(span);
   }
   inputBox.value = "";
   saveData();
